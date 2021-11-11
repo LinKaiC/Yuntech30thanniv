@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>國立雲林科技大學30週年校慶</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link rel = "stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="icon" href="img/icon.png">
+    </head>
+    <script src="script/function.js"></script>
+    <body>
+        <header id="header" class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/LOGO1.png"></a>
+            </div>
+                <a><img src="img/menu2.png" class="menu_img" onclick="Sidemenu_Open()"></a>
+        </header>
+        <div id="Sidemenu" class="sidemenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="Sidemenu_Close()">&times;</a>
+            <a href="active.html" class="option"><img src="img/information-w.png">  活動資訊</a>
+            <a href="download.html" class="option"><img src="img/download-w.png">  資料下載</a>
+            <a href="traffic.html" class="option"><img src="img/front-of-bus-w.png">  交通資訊</a>
+            <a href="https://www.yuntech.edu.tw/" target="blank" class="option"><img src="img/home-w.png">  雲科首頁</a>
+        </div>
+        <div class="bg">
+            <img src="img/網頁BG-03.png">
+        </div>
+        <div class="bg_phone">
+            <img src="img/網頁BG-phone3.png">
+        </div>
+        <div class="Act_Content">
+            <div class="menu_bar" id="menu_bar">
+                <ul>
+                    <li id="Act1" onclick="Act1_Appear()">校慶系列活動<span></span></li>
+                    <li id="Act2" onclick="Act2_Appear()">校慶當日活動<span></span></li>
+                    <li id="Act3" onclick="Act3_Appear()">藝術中心校慶系列活動<span></span></li>
+                    <li id="Act4" onclick="Act4_Appear()">圖書館週校慶系列活動<span></span></li>
+                    <li id="Act5" onclick="Act5_Appear()">各項活動聯絡人</li>
+                </ul>
+            </div>
+        </div>
+        <div id="Act_Detail" class="Act_Detail">
+            <div id="Act1_Content" class="Sub_Act_Detail">
+                <table>
+                    <tr>
+                        <th style="width: 15%;">日期</th>
+                        <th style="width: 15%;">時間</th>
+                        <th style="width: 40%;">名稱</th>
+                        <th style="width: 30%;">地點</th>
+                    </tr>
+                    <tr>
+                        <th>11/25(三)~11/27(五)</th>
+                        <th>19:00~22:00</th>
+                        <th>校慶夜間市集</th>
+                        <th>學生活動中心廣場</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="guitar_Appear()">
+                        <th>&#128073 11/25(三)</th>
+                        <th>19:00~20:00</th>
+                        <th>雨湊雲吉-校慶聯合音樂會</th>
+                        <th>學生活動中心廣場</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="IT_Appear()">
+                        <th>&#128073 11/26(四)</th>
+                        <th>18:30~20:00</th>
+                        <th>專題演講：數位時代中<br>「數位賦能」的推動作法</th>
+                        <th>國際會議廳 AC226<br>主講人:唐鳳 政務委員</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="Fire_Appear()">
+                        <th>&#128073 11/26(四)</th>
+                        <th>19:00~22:00</th>
+                        <th>戲火-熾舞社校慶成發祭</th>
+                        <th>學生活動中心廣場</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="Dance_Appear()">
+                        <th>&#128073 11/27(五)</th>
+                        <th>19:00~22:00</th>
+                        <th>五舞六八八-校慶聯合舞展</th>
+                        <th>學生活動中心廣場</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="Research_Appear()">
+                        <th>&#128073 11/27(五)<br>11/28(六)</th>
+                        <th>10:00~17:00</th>
+                        <th>2020研發成果聯展</th>
+                        <th>學生活動中心地下室迴廊</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="Run_Appear()">
+                        <th>&#128073 12/02(三)</th>
+                        <th>6:00~10:00</th>
+                        <th>2020 【YunTech 20．20】發現雲科之美校園路跑</th>
+                        <th>全校區</th>
+                    </tr>
+                </table>
+                <div class="Act_Descript" id="guitar">
+                    <img src="img/吉他_poR.jpg">
+                    <p><a style="color: burlywood;" target="blank" href="https://www.facebook.com/events/3576405915751364?acontext=%7B%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22page_admin_bar%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A166915920016422%7D%22%7D%2C%7B%22surface%22%3A%22events_admin_tool%22%2C%22mechanism%22%3A%22events_admin_tool%22%2C%22extra_data%22%3A%22[]%22%7D]%2C%22has_source%22%3Atrue%7D">校慶音樂會-雨湊雲吉</a></p>
+                    <p>藉由多元性的音樂，讓雲科大的學生與師長們感受到社團的熱情，享受在音樂的世界中。</p>
+                </div>
+                <div class="Act_Descript" id = "IT">
+                    <img src="img/唐鳳.jpg">
+                    <p>科技政委唐鳳×YunTech</p>
+                    <p>30周年校慶特邀科技政委唐鳳志雲科大與學子對話</p>
+                </div>
+                <div class="Act_Descript" id="Fire">
+                    <img src="img/戲火活動海報 1R.jpg">
+                    <p><a style="color: burlywood;" target="blank" href="https://www.facebook.com/yuntechfire/">熾舞校慶成發-戲火</a></p>
+                    <p>熾舞大戲院火熱開張！
+                        場場精彩，幕幕動人，
+                        1126快來欣賞盛大首映會。</p>
+                </div>
+                <div class="Act_Descript" id="Dance">
+                    <img src="img/DanceR.jpg">
+                    <p><a style="color: burlywood;" href="https://fb.me/e/hmBjrfJU0" target="blank">兩社聯合舞展《5舞688》</a></a></p>
+                    <p>以55688台灣大車隊的概念，傳達跳舞其實就跟叫車一樣簡單舒服，跟著音樂的起伏，前往舞蹈的小宇宙，一起Dance the night away!!!!</p>
+                </div>
+                <div class="Act_Descript" id="Research">
+                    <img src="img/研發成果展R.jpg" id="Research_IMG">
+                    <p><a style="color: burlywood;" href="https://www.yuntech.edu.tw/index.php/2019-04-10-08-04-08/item/4562-2020?fbclid=IwAR2gv3j59knt1itwDVO69WA6KFmg1lLRh0e6yoacMlx3cUvUNSg0JaIsGOs" target="blank">2020國立雲林科技大學研發成果展</a></p>
+                </div>
+                <div class="Act_Descript" id="Run">
+                    <img src="img/Run.jpg">
+                    <p><a style="color: burlywood;" href="https://www.facebook.com/YunTech20.20" target="blank">YunTech 20·20校園路跑</a></p>
+                    <p>大家期待很久了嗎?!
+                        雲科大最大盛事
+                        2020 『YunTech 20．20』發現雲科之美校園路跑
+                        就在12月2日
+                    </p>
+                </div>
+            </div>
+            <div id="Act2_Content" class="Sub_Act_Detail">
+                <table>
+                    <tr>
+                        <th style="width: 15%;">日期</th>
+                        <th style="width: 15%;">時間</th>
+                        <th style="width: 40%;">名稱</th>
+                        <th style="width: 30%;">地點</th>
+                    </tr>
+                    <tr  style="cursor: pointer;" onclick="Celebrate_Appear()">
+                        <th>&#128073 11/28(六)</th>
+                        <th>9:00~10:30</th>
+                        <th>校慶慶祝大會</th>
+                        <th>國際會議廳</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="Club_Appear()">
+                        <th>&#128073 11/28(六)</th>
+                        <th>9:00~17:00</th>
+                        <th>校慶園遊會暨社團嘉年華會</th>
+                        <th>全校區</th>
+                    </tr>
+                    <tr>
+                        <th>11/28(六)</th>
+                        <th>9:00~17:00</th>
+                        <th>雲科大新鮮人你來做做看</th>
+                        <th>全校區</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick = "Market_Appear()">
+                        <th>&#128073 11/28(六)</th>
+                        <th>9:00~17:00</th>
+                        <th>集拯市-2020創意市集</th>
+                        <th>中軸線</th>
+                    </tr>
+                    <tr>
+                        <th>11/28(六)</th>
+                        <th>9:00~17:00</th>
+                        <th>軍事模擬對抗賽<br>極限射擊大專推廣賽</th>
+                        <th>網球場</th>
+                    </tr>
+                    <tr>
+                        <th>11/28(六)</th>
+                        <th>9:30~14:00</th>
+                        <th>校友雲聚慶三十</th>
+                        <th>圖書館一樓大廳</th>
+                    </tr>
+                    <tr>
+                        <th>11/28(六)</th>
+                        <th>8:30~12:00<br>13:00~16:00</th>
+                        <th>飛越雲夢湖-斜降逃生演練</th>
+                        <th>雲夢湖畔</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick = "Flight_Appear()">
+                        <th>&#128073 11/28(六)</th>
+                        <th>9:00~17:00</th>
+                        <th>瘋狂工程師-2020第四屆<br>全國無動力手擲飛機競賽活動</th>
+                        <th>學生活動中心及雲夢湖畔</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="AR_Appear()">
+                        <th>&#128073 11/28(六)</th>
+                        <th>10:00~16:00</th>
+                        <th>數位光雕/AR/VR 校慶影音特展</th>
+                        <th>產學研大樓1F雲展廳</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="Grocery_Appear()">
+                        <th>&#128073 11/28(六)</th>
+                        <th>10:00~16:00</th>
+                        <th>地方品牌好物商店特展</th>
+                        <th>產學研大樓1F智慧展舖</th>
+                    </tr>
+                    <tr>
+                        <th>11/28(六)</th>
+                        <th>11:30-13:40</th>
+                        <th>管院啦啦競賽</th>
+                        <th>學生活動中心廣場</th>
+                    </tr>
+                    <tr style="cursor: pointer;" onclick="Magic_Appear()">
+                        <th>&#128073 11/28(六)</th>
+                        <th>15:00-18:00</th>
+                        <th>【Mirage-幻象】魔幻社校慶表演</th>
+                        <th>學生活動中心表演廳</th>
+                    </tr>
+                </table>
+                <div class="Act_Descript" id="Celebrate">
+                    <p>資料下載</p>
+                    <p >&#128209<a href="data/國立雲林科技大學30週年校慶大會慶生會及餐會程序表final.pdf" target="blank" style="color: burlywood;">30週年校慶典禮程序</a></p>
+                    <p >&#128209<a href="data/30週年校慶慶祝大會座次表.xlsx" target="blank" style="color: burlywood;">30週年校慶慶祝大會座次表</a></p>
+                </div>
+                <div class="Act_Descript" id="Club">
+                    <img src="img/園遊會.jpg" id="Club_IMG">
+                    <p>園遊會攤位、舞台表</p>
+                    <p><a href="data/30校慶_表演流程.docx" target="blank" style="color: burlywood;">30週年校慶社團嘉年華流程</a></p>
+                </div>
+                <div class="Act_Descript" id="Magic">
+                    <img src="img/Mirage-幻象R.jpg">
+                    <p><a style="color: burlywood;" href="https://www.facebook.com/YuntechMagic" target="blank">【Mirage-幻象】魔幻社校慶表演</a></p>
+                    <p>
+                        魔幻社校慶表演MIRAGE
+                        活動時間：11/28下午15:00～18:00
+                        活動地點：學生活動中心表演廳GA133
+                        到時候會有精彩的表演和摸彩喔！快點來參加吧！！  
+                    </p>
+                </div>
+                <div class="Act_Descript" id="Market">
+                    <img src="img/創意市集.jpg" id="Market_IMG">
+                    <p><a href="https://www.facebook.com/YunTechCreativeMarket/" target="blank" style="color: burlywood;">集拯市-2020創意市集</a></p>
+                </div>
+                <div class="Act_Descript" id="AR">
+                    <img src="img/產學處校慶海報1091120X2張(187X161cm)-02R.jpg" id="AR_IMG">
+                    <p>數位光雕/AR/VR 校慶影音特展</p>
+                </div>
+                <div class="Act_Descript" id="Grocery">
+                    <img src="img/AR.jpg" id="Grocery_IMG">
+                    <p>地方品牌好物商店特展</p>
+                </div>
+                <div class="Act_Descript" id="Flight">
+                    <img src="img/飛機R.jpg">
+                    <p><a style="color: burlywood;" href="https://www.facebook.com/748701805318070/posts/1520563101465266/" target="blank">2020瘋狂工程師-第四屆無動力手擲飛機競賽</a></p>
+                    <p style="font-size: 15px;">NYUST 瘋狂工程師
+                        第四屆全國無動力手擲飛機競賽開放報名啦
+                        利用木片設計出屬於自己獨一無二的飛機
+                        有著美麗和具有挑戰性的比賽場地
+                        還有提供免費優質的材料
+                        趕快來參與我們的活動一同築出屬於自己的夢想吧</p>
+                </div>
+            </div>
+            <div id="Act3_Content" class="Sub_Act_Detail">
+                <table>
+                    <tr>
+                        <th style="width: 15%;">日期</th>
+                        <th style="width: 15%;">時間</th>
+                        <th style="width: 40%;">名稱</th>
+                        <th style="width: 30%;">地點</th>
+                    </tr>
+                    <tr>
+                        <th>11/05(四)~12/24(四)</th>
+                        <th>8:00~17:00</th>
+                        <th>2020年設計學院<br>教師暨校友聯展_凝聚</th>
+                        <th>藝術中心</th>
+                    </tr>
+                    <tr>
+                        <th>11/03(二)~12/30(三)</th>
+                        <th>8:00~17:00</th>
+                        <th>典藏系列特展</th>
+                        <th>藝術中心</th>
+                    </tr>
+                    <tr>
+                        <th>11/03(二)~12/30(三)</th>
+                        <th>8:00~17:00</th>
+                        <th>日本浮世繪典藏展</th>
+                        <th>藝術中心</th>
+                    </tr>
+                    <tr>
+                        <th>11/03(二)~12/30(三)</th>
+                        <th>8:00~17:00</th>
+                        <th>周義雄雕塑展</th>
+                        <th>藝術中心</th>
+                    </tr>
+                    <tr>
+                        <th>11/03(二)~12/30(三)</th>
+                        <th>8:00~17:00</th>
+                        <th>張敬藝術典藏展</th>
+                        <th>藝術中心</th>
+                    </tr>
+                    <tr>
+                        <th>11/03(二)~12/30(三)</th>
+                        <th>8:00~17:00</th>
+                        <th>書畫用墨典藏文物展</th>
+                        <th>藝術中心</th>
+                    </tr>
+                    <tr>
+                        <th>11/03(二)~12/30(三)</th>
+                        <th>8:00~17:00</th>
+                        <th>國際交流合作典藏展</th>
+                        <th>藝術中心</th>
+                    </tr>
+                    <tr>
+                        <th>11/03(二)~12/30(三)</th>
+                        <th>8:00~17:00</th>
+                        <th>金氏世界紀錄_最大羅盤特展</th>
+                        <th>藝術中心</th>
+                    </tr>
+                </table>
+                <div class="Act_Descript" id="Art">
+                    <img src="img/凝聚R.jpg">
+                    <p><a style="color: burlywood;" target="blank" href="http://www.ac.yuntech.edu.tw/index.php">藝術中心 Art Center</a></p>
+                </div>
+            </div>
+            <div id="Act4_Content" class="Sub_Act_Detail">
+                <table>
+                    <tr>
+                        <th style="width: 15%;">日期</th>
+                        <th style="width: 15%;">時間</th>
+                        <th style="width: 40%;">名稱</th>
+                        <th style="width: 30%;">地點</th>
+                    </tr>
+                    <tr>
+                        <th>11/16(一)~12/04(五)</th>
+                        <th>9:00~17:00</th>
+                        <th>【30th雲科菁華】<br>數位校史典藏主題展</th>
+                        <th>數位校史展示區<br><a href="http://libweb.yuntech.edu.tw/archives/">線上參觀</a></th>
+                    </tr>
+                    <tr>
+                        <th>11/18(三)~11/30(一)</th>
+                        <th>9:00~17:00</th>
+                        <th>智能地域設計服務研究中心成果特展</th>
+                        <th>展覽大廳</th>
+                    </tr>
+                    <tr>
+                        <th>11/23(一)-12/07(一)</th>
+                        <th>09:00-17:00</th>
+                        <th>【創校維新】<br>30週年校慶校史文物特展</th>
+                        <th>校史館</th>
+                    </tr>
+                    <tr>
+                        <th>11/28(六)</th>
+                        <th>09:00-17:00</th>
+                        <th>校友回娘家<br>YunTech幸福好好拍 !</th>
+                        <th>幸福自拍區</th>
+                    </tr>
+                    <tr>
+                        <th>12/02(三)</th>
+                        <th>09:00-17:00</th>
+                        <th>二手好書交流共享活動</th>
+                        <th>展覽大廳</th>
+                    </tr>
+                </table>
+                <div class="Act_Descript" id="Libary">
+                    <img src="img/Libary.png">
+                    <p><a style="color: burlywood;" target="blank" href="http://www.lib.yuntech.edu.tw/~dev/libweek/2020/actall.htm?fbclid=IwAR2zSu6zk4FnmDnhbV_6CYOJ1IivUo7uIY6hOgs8jdhkKJISiN1WgFp7NEA">圖書館週活動</a></p>
+                </div>
+            </div>
+            <div id="Act5_Content" class="Sub_Act_Detail">
+                <table>
+                    <tr>
+                        <th style="width: 30%;">活動類別</th>
+                        <th style="width: 30%;">承辦單位</th>
+                        <th style="width: 28%;">聯絡人員</th>
+                        <th style="width: 12%;">聯絡電話</th>
+                    </tr>
+                    <tr>
+                        <th>校慶大會</th>
+                        <th>學生事務處<span>軍訓組</th>
+                        <th>郭宗廷<span>行政助理</th>
+                        <th>#2362</a></th>
+                    </tr>
+                    <tr>
+                        <th>校園新鮮人</th>
+                        <th>學生事務處<span>軍訓組</th>
+                        <th>林淑真<span>中校教官</th>
+                        <th>#2361</th>
+                    </tr>
+                    <tr>
+                        <th>減塑裸賣園遊會</th>
+                        <th>學生事務處<span>課外活動指導組</th>
+                        <th>田瑞良<span>助教</th>
+                        <th>#2324</th>
+                    </tr>
+                    <tr>
+                        <th>2020飛越雲夢湖</th>
+                        <th>學生事務處<span>生活輔導組</th>
+                        <th>張健文<span>行政組員</th>
+                        <th>#3910</th>
+                    </tr>
+                    <tr>
+                        <th>圖書館週系列活動</th>
+                        <th>圖書館<span>館務發展組</th>
+                        <th>朱嫺玢<span>組長</th>
+                        <th>#2605</th>
+                    </tr>
+                    <tr>
+                        <th>研發成果展</th>
+                        <th>研究發展處<span>新創企劃組</th>
+                        <th>李嫦孺<span>組員</th>
+                        <th>#2522</th>
+                    </tr>
+                    <tr>
+                        <th>藝文特展</th>
+                        <th>藝術中心</th>
+                        <th>陳世賢<span>行政助理</th>
+                        <th>#2646</th>
+                    </tr>
+                    <tr>
+                        <th>產學處系列活動</th>
+                        <th>產學處</th>
+                        <th>陳青慧<span>專任助理</th>
+                        <th>#2743</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

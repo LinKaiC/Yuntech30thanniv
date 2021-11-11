@@ -1,0 +1,524 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+#html,body{             /*設定邊界為0*/
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+img{
+    -ms-interpolation-mode: bicubic;
+}
+#header{                    /*header控制*/
+    cursor: default;
+    position: fixed;
+    text-align: right;
+    width: 100vw;
+    z-index: 10001;
+    top:3vh;
+}
+    #header >.logo{            /*Yuntech30th*/     
+        display: inline-block;
+        flex-shrink: 0;
+        height: inherit;
+        left: 1vh;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+    }
+        #header>.logo>a>img{
+            height: 40px;
+            width: 100px;
+        }
+    #header > a:last-child{     /*把header中a的最後一個往左*/
+        padding-right: 1.25em;
+    }
+        #header > a > .menu_img{    /*設定menu按鈕*/
+            width: 5vh;
+            height: 5vh;
+            flex-shrink: 0;
+            padding-right: 1vw;
+            position: inherit;
+        }
+            #header >a >.menu_img:hover{
+                cursor: pointer;
+                animation-name: btn_img_ani;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes btn_img_ani{    /*設定menu動畫*/
+                0%{
+                    padding-top: 5px;
+                }50%{
+                    padding-top: 10px;
+                }100%{
+                    padding-top: 5px;
+                }
+    }
+.bg{            /*背景*/
+    position: relative;
+    display: block;
+    top: 0;
+    left: -5px;
+    width: 100vw;
+    height: auto;
+    border-left: 0;
+    border-top: 0;
+    background-color: rgb(245, 245, 245);
+}
+    .bg>img{
+        width: 100vw;
+        height: auto;
+        
+    }
+.bg_phone{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 0;
+    border-top: 0;
+    background-color: rgb(245, 245, 245);
+}
+    .bg_phone>img{
+        width: 100vw;
+        height: 100vh;
+    }
+.sidemenu{          /*側邊選單*/
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10004;
+    top: 0;
+    right: 0;
+    background-color: rgb(19, 19, 19);
+    opacity: 95%;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}  
+    .sidemenu>a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: aliceblue;
+        display: block;
+        transition: 0.3s;
+        font-family: "微軟正黑體";
+    }
+        .sidemenu>a>img{    /*sidemenu的圖片*/
+            height: 25px;
+            padding-left: 0;
+            flex-shrink: 0;
+        }
+    .sidemenu>.option{      /*sidemenu的選項*/
+        padding-left: 10px;
+    }
+        .sidemenu>.option:hover{
+            color: burlywood;
+            background-color: rgb(68, 68, 68);
+        }
+    .sidemenu>.closebtn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 36px;
+    }
+        .sidemenu>.closebtn:hover{
+            color: burlywood;
+        }
+.content{
+    display: inline-flex;
+    flex-shrink: 0;
+    position: relative;
+    width: 100vw;
+    left: 0;
+    background-color: white;
+    min-height: 100%;
+    top: 10vh;
+}
+    .content>.Act_Box{          /*灰色Box部分*/
+        position: relative;
+        width: 30vw;
+        height: 70vh;
+        background-color: rgb(245, 245, 245);
+        color: rgb(138, 138, 138);
+        left: 10vw ;
+    }
+        .content>.Act_Box>img{
+            width: inherit;
+            height: 30%;
+            overflow: hidden;
+        }
+        .content>.Act_Box>p{
+            text-align: center;
+            height: 5%;
+            font-size: 30px;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            color: black;
+        }
+
+        .content>.Act_Box>a{
+            position: relative;
+            font-family: "微軟正黑體";
+            font-size: 20px;
+            word-wrap: break-word;
+            text-align: center;
+            display: block;
+            width: inherit;
+            height: 40%;
+        }
+        .content>.Act_Box>.more{
+            position: relative;
+            text-align: center;
+            height: 15%;
+        }
+            .content>.Act_Box>.more>img{
+                width: 30px;
+                height: auto;
+                animation-name: btn_img_ani;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+
+    .content>.Traffic_Box{
+        position: relative;
+        width: 30vw;
+        height: 70vh;
+        background-color: rgb(245, 245, 245);
+        color: rgb(138, 138, 138);
+        left: 30vw ;
+    }
+        .content>.Traffic_Box>img{
+            width: inherit;
+            height: 30%;
+            overflow: hidden;
+        }
+        .content>.Traffic_Box>p{
+            text-align: center;
+            height: 5%;
+            font-size: 30px;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            color: black;
+        }
+        .content>.Traffic_Box>a{
+            position: relative;
+            font-family: "微軟正黑體";
+            font-size: 20px;
+            text-align: center;
+            word-wrap: break-word;
+            display: block;
+            width: inherit;
+            height: 40%;
+        }
+        .content>.Traffic_Box>.more{
+            position: relative;
+            text-align: center;
+            height: 15%;
+        }
+            .content>.Traffic_Box>.more>img{
+                width: 30px;
+                height: auto;
+                animation-name: btn_img_ani;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+    .content>a{                                  /*內容部分*/
+        background-color: rgb(245 , 245, 245);
+        color:black;
+        
+    }
+    .content>p{
+        background-color: rgb(245 , 245, 245);
+        color:black;
+        
+    }
+.footer{                        /*頁底*/
+    position: relative;
+    width: 100vw;
+    height: auto;
+    left: 0;
+    display: inline;
+}
+    .footer>img{
+        width: 100vw;
+        height: auto;
+        bottom: 0vh;
+    }
+.footer2{
+    position: relative;
+    top: 20vh;
+    display: none;
+}
+    .footer2>img{
+        width: 100vw;
+        display: none;
+    }
+.Act_Content{
+    width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    background-color: rgba(255, 248, 220, 0.1);
+    position: absolute;
+    z-index: 10003;
+}
+.Act_Content>.menu_bar{
+    height: 5vh;
+    color: burlywood;
+    text-align: center;
+    font-size: 25px;
+    font-family: "微軟正黑體";
+}
+.Act_Content>.menu_bar> ul{
+    display: inline;
+}
+.Act_Content>.menu_bar>ul>li{
+    display: inline;
+}
+.Act_Content>.menu_bar>ul>li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.Act_Content>.menu_bar>ul>li>span{
+    margin-left: 1vw;
+}
+.Act_Detail{
+    position: absolute;
+    background-color: rgba(255, 248, 220, 0.1);
+    width: 80vw;
+    top: calc(10vh + 5vh);
+    left: 10vw;
+    height: 0;
+    transition: 0.1s;
+}
+.Sub_Act_Detail{
+    display: none;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+}
+.Sub_Act_Detail>table{
+    width: 40vw;
+    height: 60vh;
+    background-color:burlywood;
+    text-align: center;
+}
+.Sub_Act_Detail>table tr:hover{
+    background-color: rgba(255, 248, 220, 0.2);
+}
+@media screen and (max-width:1280px){       /*手機內容*/
+    .content{
+        top: 10vh;
+        display: inline-block;
+        min-height: 160vh;
+    }
+    .content>.Act_Box{
+        left: 30vw;
+        width: 40vw;
+        height: 70vw;
+    }
+    .content>.Traffic_Box{
+        left: 30vw;
+        top: 10vh;
+        width: 40vw;
+        height: 70vw;
+    }
+    .footer{
+        padding-top: 13vh;
+        position: sticky;
+        width: 100vh;
+        height: auto;
+        display: none;
+    }
+    .footer2{
+        display: inline;
+    }
+    .sidemenu>a{
+        font-size: 20px;
+    }
+    .sidemenu>a>img{    
+        height: 20px;
+        padding-left: 0;
+    }
+    .Act_Content>.menu_bar{
+        font-size: 20px;
+        overflow-y: inherit;
+        word-wrap: break-word;
+    }
+    .Act_Detail{
+        top:calc(10vh + 5vh);
+    }
+    .Sub_Act_Detail>table{
+        width: 70vw;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1110px){
+    .Act_Content>.menu_bar{
+        height: 8vh;
+    }
+    .Act_Detail{
+        top: calc(10vh + 8vh);
+    }
+}
+@media screen and (max-width:980px){
+    .content{
+        top: 10vh;
+        display: inline-block;
+    }
+    .content>.Act_Box{
+        left: 30vw;
+        width: 40vw;
+        height: 70vw;
+    }
+    .content>.Traffic_Box{
+        left: 30vw;
+        top: 10vh;
+        width: 40vw;
+        height: 70vw;
+    }
+    .footer{
+        padding-top: 13vh;
+        position: sticky;
+        width: 100vh;
+        height: auto;
+        display: none;
+    }
+    .footer2{
+        display: inline;
+    }
+    .sidemenu>a{
+        font-size: 19px;
+    }
+    .sidemenu>a>img{    
+        height: 19px;
+        padding-left: 0;
+    }
+    
+    .bg_phone{
+        display: block;
+    }
+    .Act_Detail{
+        top:calc(10vh + 8vh);
+    }
+    .Act_Content>.menu_bar{
+        font-size: 19px;
+        overflow-y: inherit;
+        word-wrap: break-word;
+    }
+    .Sub_Act_Detail>table{
+        width: 70vw;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:736px){
+    .content{
+        top: 10vh;
+        display: inline-block;
+    }
+    .content>.Act_Box{
+        left: 15vw;
+        width: 70vw;
+        height: 100vw;
+    }
+    .content>.Traffic_Box{
+        left: 15vw;
+        top: 10vh;
+        width: 70vw;
+        height: 100vw;
+    }
+    .footer{
+        padding-top: 13vh;
+        position: sticky;
+        width: 100vh;
+        height: auto;
+        display: none;
+    }
+    .footer2{
+        display: inline;
+    }
+    .sidemenu>a{
+        font-size: 17px;
+    }
+    .sidemenu>a>img{    
+        height: 17px;
+        padding-left: 0;
+    }
+    
+    .bg_phone{
+        display: block;
+    }
+    .Act_Detail{
+        top:calc(10vh + 8vh);
+    }
+    .Act_Content>.menu_bar{
+        font-size: 17px;
+        overflow-y: inherit;
+        word-wrap: break-word;
+    }
+    .Sub_Act_Detail>table{
+        width: 70vw;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:480px){
+    .content{
+        top: 10vh;
+        display: inline-block;
+    }
+    .content>.Act_Box{
+        left: 10vw;
+        width: 80vw;
+        height: 70vh;
+    }
+    .content>.Traffic_Box{
+        left: 10vw;
+        top: 10vh;
+        width: 80vw;
+        height: 70vh;
+    }
+    .footer{
+        padding-top: 13vh;
+        position: sticky;
+        width: 100vh;
+        height: auto;
+        display: none;
+    }
+    .footer2{
+        display: inline;
+    }
+    .sidemenu>a{
+        font-size: 14px;
+    }
+    .sidemenu>a>img{    
+        height: 14px;
+        padding-left: 0;
+    }
+    .bg_phone{
+        display: block;
+    }
+    .Act_Detail{
+        top:calc(10vh+8vh);
+    }
+    .Act_Content>.menu_bar{
+        font-size: 14px;
+        overflow-y: inherit;
+    }
+    .Act_Content>.menu_bar>li{
+        word-wrap: break-word;
+    }
+    .Sub_Act_Detail>table{
+        width: 70vw;
+        font-size: 10px;
+    }
+}

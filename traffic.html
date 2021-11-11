@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>國立雲林科技大學30週年校慶</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link rel = "stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="icon" href="img/icon.png">
+    </head>
+    <script src="script/function.js"></script>
+    <body>
+        <header id="header" class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/LOGO1.png"></a>
+            </div>
+                <a><img src="img/menu2.png" class="menu_img" onclick="Sidemenu_Open()"></a>
+        </header>
+        <div id="Sidemenu" class="sidemenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="Sidemenu_Close()">&times;</a>
+            <a href="active.html" class="option"><img src="img/information-w.png">  活動資訊</a>
+            <a href="download.html" class="option"><img src="img/download-w.png">  資料下載</a>
+            <a href="traffic.html" class="option"><img src="img/front-of-bus-w.png">  交通資訊</a>
+            <a href="https://www.yuntech.edu.tw/" target="blank" class="option"><img src="img/home-w.png">  雲科首頁</a>
+        </div>
+        <div>
+            <div class="bg">
+                <img src="img/網頁BG-03.png" >
+            </div>
+            <div class="bg_phone">
+                <img src="img/網頁BG-phone3.png">
+            </div>
+        </div>
+        <div class="Traffic_Content">
+            <div class="menu_bar" id="menu_bar">
+                <ul>
+                    <li id="GoogleMap" onclick="GoogleMap_Appear()">GoogleMap<span></span></li>
+                    <li id="Bus" onclick="Bus_Appear()">公車/客運<span></span></li>
+                    <li id="SchoolBus" onclick="SchoolBus_Appear()">校車/計程車<span></span></li>
+                    <li id="Rail" onclick="Rail_Appear()">高鐵/火車<span></span></li>
+                    <li id="HighWay" onclick="Highway_Appear()">高速公路<span></span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="Traffic_Detail" class="Traffic_Detail">
+            <div id="Map_Detail" class="Sub_Traffic_Detail">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1826.7188363585258!2d120.53294895806178!3d23.696059596154065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec804c079615b%3A0xdf19d859983954be!2z5ZyL56uL6Zuy5p6X56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1605713316970!5m2!1szh-TW!2stw" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div id="Bus_Detail" class="Sub_Traffic_Detail">
+                <table class="Bus_Table">
+                    <tr>
+                        <th>客運</th>
+                        <th>路線</th>
+                    </tr>
+                    <tr>
+                        <th>台西客運</th>
+                        <th>7120斗六-大學路-虎尾(經本校正門)<br>
+                        7126斗六-崙峰-梅山(經本校龍潭路側門)<br>
+                        <a href="http://www.taisibus.com/index.php?option=com_productbook&Itemid=61" style="color: black;"target ="blank">時刻表查詢</a>
+                    </th>
+                    </tr>
+                    <tr>
+                        <th>日統客運</th>
+                        <th>7000梅山-中山高-台北(台北-斗六(雲科大站))<br>
+                        7006梅山-北二高-台北(台北-斗六(雲科大站))<br>
+                        7011斗六-六輕路線(斗六火車站(前站)-本校正門)<br>
+                        <a href="https://www.solarbus.com.tw/freeway/7000.html" style="color: black;"target ="blank">時刻表查詢</a>
+                    </th>
+                    </tr>
+                    <tr>
+                        <th>台灣好行</th>
+                        <th>台鐵火車站-華山(經中山路及本校南側門)<br>
+                        <a href="https://www.taiwantrip.com.tw/upload/1514888075FGxxW.pdf" style="color: black;"target ="blank">時刻表查詢</a>
+                        </th>
+                    </tr>
+                </table>
+                <img src="img/busR.jpg" class="Bus_Img">
+            </div>
+            <div id="SchoolBus_Detail" class="Sub_Traffic_Detail">
+                <table class="School_Bus_Table">
+                    <tr>
+                        <th>班次\地點</th>
+                        <th>活動中心前<br>發車時間</th>
+                        <th>校門口<br>發車時間</th>
+                        <th>斗六火車站<br>發車時間</th>
+                        <th>備註</th>
+                    </tr>
+                    <tr>
+                        <th>第一班</th>
+                        <th>07:50</th>
+                        <th>07:55</th>
+                        <th>08:05</th>
+                        <th>週六、日例假日停駛</th>
+                    </tr>
+                    <tr>
+                        <th>第二班</th>
+                        <th>07:55</th>
+                        <th>08:55</th>
+                        <th>09:05</th>
+                        <th>週六、日例假日停駛</th>
+                    </tr>
+                    <tr>
+                        <th>第三班</th>
+                        <th>09:50</th>
+                        <th>09:55</th>
+                        <th>10:05</th>
+                        <th>週六、日例假日停駛</th>
+                    </tr>
+                    <tr>
+                        <th>第四班</th>
+                        <th>15:05</th>
+                        <th>15:10</th>
+                        <th>15:20</th>
+                        <th>週六、日例假日停駛</th>
+                    </tr>
+                    <tr>
+                        <th>第五班</th>
+                        <th>15:25</th>
+                        <th>15:30</th>
+                        <th>15:40</th>
+                        <th>連續放假前一日行駛</th>
+                    </tr>
+                    <tr>
+                        <th>第六班</th>
+                        <th>16:05</th>
+                        <th>16:10</th>
+                        <th>16:20</th>
+                        <th>週六、日例假日停駛</th>
+                    </tr>
+                    <tr>
+                        <th>第七班</th>
+                        <th>16:25</th>
+                        <th>16:30</th>
+                        <th>16:40</th>
+                        <th>連續放假前一日行駛</th>
+                    </tr>
+                    <tr>
+                        <th>第八班</th>
+                        <th>17:05</th>
+                        <th>17:10</th>
+                        <th>17:20</th>
+                        <th>週六、日例假日停駛</th>
+                    </tr>
+                    <tr>
+                        <th>計程車行電話</th>
+                        <th>久安計程車行<br>(05)533-4833</th>
+                        <th>斗六計程車行<br>(05)532-2525</th>
+                        <th>統一計程車行<br>(05)596-2777</th>
+                        <th>無</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="Rail_Detail" class="Sub_Traffic_Detail">
+                <p class="Rail_Detail">
+                    請搭火車至台鐵斗六站，搭乘計程車/公車前往雲科大<br><br>
+                    <a style="color: burlywood;" target="blank" href="https://tip.railway.gov.tw/tra-tip-web/tip/tip001/tip112/gobytime">火車時刻表查詢</a><br><br>
+                    <a style="color: burlywood;" target="blank" href="https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c">高鐵時刻表查詢</a>
+                </p>
+            </div>
+            <div id="Highway_Detail" class="Sub_Traffic_Detail">
+                <table class="Highway_Table">
+                    <tr>
+                        <th>高速公路</th>
+                        <th>路線一(北上)</th>
+                        <th>路線二(南下)</th>
+                    </tr>
+                    <tr>
+                        <th>國道一號(中山高)</th>
+                        <th>國道一號(240.6 km)→下斗南交流道右轉→台一線→雲林路左轉→至斗六右轉大學路三段→本校</th>
+                        <th>國道一號雲林系統交流道(243.7 km)→78線快速公路往古坑方向→斗六/古坑交流道出口右轉台三線(往斗六)→本校</th>
+                    </tr>
+                    <tr>
+                        <th>國道三號(二高)</th>
+                        <th>國道三號古坑系統(269.2 km)→台78線快速公路往古坑方向→斗六(台三線)→本校(大學路三段123號)</th>
+                        <th>國道三號(260.3 km) →下斗六交流道往斗六方向→於石榴路/台3線向右轉→台3線→於大學路一段/台3線向左轉→本校</th>
+                    </tr>
+                </table>
+                <img src="img/highwayR.jpg" class="HighwayImg">
+            </div>
+        </div>
+    </body>
+</html>
